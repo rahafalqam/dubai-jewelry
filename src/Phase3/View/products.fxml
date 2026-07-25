@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Phase3.Controller.ProductsController"
+            stylesheets="@../CSS/style.css">
+
+    <top>
+        <VBox alignment="CENTER" spacing="10">
+
+            <padding>
+                <Insets top="20" bottom="20"/>
+            </padding>
+
+            <Label text="AVAILABLE PRODUCTS"
+                   styleClass="title"/>
+
+        </VBox>
+    </top>
+
+    <center>
+
+        <ScrollPane fitToWidth="true">
+
+            <content>
+
+                <FlowPane fx:id="productsFlowPane"
+                          alignment="CENTER"
+                          hgap="30"
+                          vgap="30">
+
+                    <padding>
+                        <Insets top="30"
+                                right="30"
+                                bottom="30"
+                                left="30"/>
+                    </padding>
+
+                </FlowPane>
+
+            </content>
+
+        </ScrollPane>
+
+    </center>
+
+    <bottom>
+
+        <HBox alignment="CENTER"
+              spacing="25">
+
+            <padding>
+                <Insets top="20"
+                        bottom="20"/>
+            </padding>
+
+            <Button text="← Back"
+                    prefWidth="170"
+                    onAction="#goBack"/>
+
+            <Button text="🛒 View Cart"
+                    prefWidth="170"
+                    onAction="#openCart"/>
+
+        </HBox>
+
+    </bottom>
+
+</BorderPane>

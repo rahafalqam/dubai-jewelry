@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<ScrollPane fitToWidth="true"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Phase3.Controller.RegisterController">
+
+    <VBox alignment="CENTER"
+          spacing="12"
+          stylesheets="@../CSS/style.css">
+        <padding>
+            <Insets top="30" right="40" bottom="30" left="40"/>
+        </padding>
+
+        <Label text="Create Account"
+               styleClass="title"/>
+
+        <TextField fx:id="idField"
+                   promptText="User ID"/>
+        
+        <TextField fx:id="usernameField"
+           promptText="Username"/>
+
+
+        <TextField fx:id="firstNameField"
+                   promptText="First Name"/>
+
+        <TextField fx:id="lastNameField"
+                   promptText="Last Name"/>
+
+        <TextField fx:id="cityField"
+                   promptText="City Name"/>
+
+        <TextField fx:id="streetField"
+                   promptText="Street Name"/>
+
+        <TextField fx:id="emailField"
+                   promptText="Email"/>
+
+        <TextField fx:id="phoneField"
+                   promptText="Phone Number"/>
+
+        <PasswordField fx:id="passwordField"
+                       promptText="Password"/>
+
+        <PasswordField fx:id="confirmPasswordField"
+                       promptText="Confirm Password"/>
+
+        <Button text="Create Account"
+                prefWidth="220"
+                onAction="#register"/>
+        <Button text="Back"
+            prefWidth="170"
+            onAction="#goBack"/>
+
+
+    </VBox>
+
+</ScrollPane>

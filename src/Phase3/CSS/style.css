@@ -1,0 +1,42 @@
+/* style.css */
+
+.root{
+    -fx-background-color: #111111;
+}
+
+.label{
+    -fx-text-fill: white;
+}
+
+.title{
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #d4af37;
+}
+
+.subtitle{
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+}
+
+.button{
+    -fx-background-color: #d4af37;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+}
+
+.text-field,
+.password-field{
+    -fx-background-radius: 10;
+}
+
+.hyperlink {
+    -fx-text-fill: #d4af37;
+    -fx-border-color: transparent;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: white;
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Phase3.Controller.CartController"
+            stylesheets="@../CSS/style.css"
+            style="-fx-background-color:#000000;">
+
+    <!-- Title -->
+
+    <top>
+        <VBox alignment="CENTER" spacing="10">
+            <padding>
+                <Insets top="30" bottom="25"/>
+            </padding>
+
+            <Label text="SHOPPING CART"
+                   style="-fx-text-fill:#d4af37;
+                          -fx-font-size:40;
+                          -fx-font-weight:bold;"/>
+        </VBox>
+    </top>
+
+    <!-- Table -->
+
+    <center>
+
+        <VBox alignment="CENTER" spacing="20">
+
+            <TableView fx:id="cartTable"
+                       prefWidth="950"
+                       prefHeight="450">
+
+                <columns>
+
+                    <TableColumn fx:id="productColumn"
+                                 text="Product"
+                                 prefWidth="280"/>
+
+                    <TableColumn fx:id="quantityColumn"
+                                 text="Quantity"
+                                 prefWidth="140"/>
+
+                    <TableColumn fx:id="priceColumn"
+                                 text="Price"
+                                 prefWidth="180"/>
+
+                    <TableColumn fx:id="subtotalColumn"
+                                 text="Subtotal"
+                                 prefWidth="220"/>
+
+                </columns>
+
+            </TableView>
+
+            <Label fx:id="totalLabel"
+                   text="Grand Total : 0 JOD"
+                   style="-fx-text-fill:#d4af37;
+                          -fx-font-size:26;
+                          -fx-font-weight:bold;"/>
+
+        </VBox>
+
+    </center>
+
+    <!-- Buttons -->
+
+    <bottom>
+
+        <HBox alignment="CENTER"
+              spacing="25">
+
+            <padding>
+                <Insets top="20" bottom="30"/>
+            </padding>
+
+            <Button text="🗑 Remove"
+                    prefWidth="180"
+                    onAction="#removeItem"/>
+
+            <Button text="← Continue Shopping"
+                    prefWidth="220"
+                    onAction="#continueShopping"/>
+
+            <Button text="✔ Checkout"
+                    prefWidth="180"
+                    onAction="#checkout"/>
+
+        </HBox>
+
+    </bottom>
+
+</BorderPane>

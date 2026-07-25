@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+
+<ScrollPane fitToWidth="true"
+            fitToHeight="true"
+            style="-fx-background: #000000; -fx-background-color: #000000;"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Phase3.Controller.AdminDashboardController"
+            stylesheets="@../CSS/style.css">
+
+    <content>
+        <BorderPane style="-fx-background-color: #000000;">
+
+            <top>
+                <HBox alignment="CENTER"
+                      spacing="20">
+                    <padding>
+                        <Insets top="20" right="20" bottom="20" left="20"/>
+                    </padding>
+                    <Label text="ADMIN DASHBOARD"
+                           styleClass="title"/>
+                </HBox>
+            </top>
+
+            <center>
+                <FlowPane fx:id="productsFlowPane"
+                          alignment="CENTER"
+                          hgap="30"
+                          vgap="30">
+                    <padding>
+                        <Insets top="30" bottom="30"/>
+                    </padding>
+
+                    <VBox alignment="CENTER"
+                          spacing="10"
+                          style="-fx-background-color: #111111;
+                                 -fx-padding: 20;
+                                 -fx-background-radius: 20;
+                                 -fx-border-radius: 20;
+                                 -fx-border-color: #d4af37;">
+                        <ImageView fitWidth="220"
+                                   fitHeight="260"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/necklace.jpeg"/>
+                            </image>
+                        </ImageView>
+                        <Label text="Vintage Necklace"
+                               style="-fx-text-fill: #d4af37;
+                                      -fx-font-size: 20px;
+                                      -fx-font-weight: bold;"/>
+                        <Label text="Product ID: 000001"
+                               style="-fx-text-fill: white;"/>
+                        <Label text="Weight: 1.56 g"
+                               style="-fx-text-fill: white;"/>
+                        <Label text="Workmanship: 1.2 JOD / GRAM"
+                               style="-fx-text-fill: white;"/>
+                    </VBox>
+
+                    <VBox alignment="CENTER"
+                          spacing="10"
+                          style="-fx-background-color: #111111;
+                                 -fx-padding: 20;
+                                 -fx-background-radius: 20;
+                                 -fx-border-radius: 20;
+                                 -fx-border-color: #d4af37;">
+                        <ImageView fitWidth="220"
+                                   fitHeight="260"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/heartShapeNeclase.jpeg"/>
+                            </image>
+                        </ImageView>
+                        <Label text="Heart Shape Necklace"
+                               style="-fx-text-fill: #d4af37;
+                                      -fx-font-size: 20px;
+                                      -fx-font-weight: bold;"/>
+                        <Label text="Product ID: 000002"
+                               style="-fx-text-fill: white;"/>
+                        <Label text="Weight: 2.1 g"
+                               style="-fx-text-fill: white;"/>
+                        <Label text="Workmanship: 1.2 JOD / GRAM"
+                               style="-fx-text-fill: white;"/>
+                    </VBox>
+
+                    <VBox alignment="CENTER"
+                          spacing="10"
+                          style="-fx-background-color: #111111;
+                                 -fx-padding: 20;
+                                 -fx-background-radius: 20;
+                                 -fx-border-radius: 20;
+                                 -fx-border-color: #d4af37;">
+                        <ImageView fitWidth="220"
+                                   fitHeight="260"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/Ring1.png"/>
+                            </image>
+                        </ImageView>
+                        <Label text="Luxury Ring"
+                               style="-fx-text-fill: #d4af37;
+                                      -fx-font-size: 20px;
+                                      -fx-font-weight: bold;"/>
+                        <Label text="Product ID: 000003"
+                               style="-fx-text-fill: white;"/>
+                        <Label text="Weight: 2.0 g"
+                               style="-fx-text-fill: white;"/>
+                        <Label text="Workmanship: 1 JOD / GRAM"
+                               style="-fx-text-fill: white;"/>
+                    </VBox>
+
+                    <VBox alignment="CENTER"
+                          spacing="10"
+                          style="-fx-background-color: #111111;
+                                 -fx-padding: 20;
+                                 -fx-background-radius: 20;
+                                 -fx-border-radius: 20;
+                                 -fx-border-color: #d4af37;">
+                        <ImageView fitWidth="220"
+                                   fitHeight="260"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/Lira.png"/>
+                            </image>
+                        </ImageView>
+                        <Label text="Lira bracklet"
+                               style="-fx-text-fill: #d4af37;
+                                      -fx-font-size: 20px;
+                                      -fx-font-weight: bold;"/>
+                        <Label text="Product ID: 000004"
+                               style="-fx-text-fill: white;"/>
+                        <Label text="Weight: 5.0 g"
+                               style="-fx-text-fill: white;"/>
+                        <Label text="Workmanship: 2.5 JOD / GRAM"
+                               style="-fx-text-fill: white;"/>
+                    </VBox>
+
+                    <VBox alignment="CENTER"
+                          spacing="10"
+                          style="-fx-background-color: #111111;
+                                 -fx-padding: 20;
+                                 -fx-background-radius: 20;
+                                 -fx-border-radius: 20;
+                                 -fx-border-color: #d4af37;">
+                        <ImageView fitWidth="220"
+                                   fitHeight="260"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/Lira2.png"/>
+                            </image>
+                        </ImageView>
+                        <Label text="multi mini Liras bracklet"
+                               style="-fx-text-fill: #d4af37;
+                                      -fx-font-size: 20px;
+                                      -fx-font-weight: bold;"/>
+                        <Label text="Product ID: 000005"
+                               style="-fx-text-fill: white;"/>
+                        <Label text="Weight: 6.0 g"
+                               style="-fx-text-fill: white;"/>
+                        <Label text="Workmanship: 2.5 JOD / GRAM"
+                               style="-fx-text-fill: white;"/>
+                    </VBox>
+
+                    <VBox alignment="CENTER"
+                          spacing="10"
+                          style="-fx-background-color: #111111;
+                                 -fx-padding: 20;
+                                 -fx-background-radius: 20;
+                                 -fx-border-radius: 20;
+                                 -fx-border-color: #d4af37;">
+                        <ImageView fitWidth="220"
+                                   fitHeight="260"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/snake.png"/>
+                            </image>
+                        </ImageView>
+                        <Label text="Snake shape ring"
+                               style="-fx-text-fill: #d4af37;
+                                      -fx-font-size: 20px;
+                                      -fx-font-weight: bold;"/>
+                        <Label text="Product ID: 000006"
+                               style="-fx-text-fill: white;"/>
+                        <Label text="Weight: 2 g"
+                               style="-fx-text-fill: white;"/>
+                        <Label text="Workmanship: 1 JOD / GRAM"
+                               style="-fx-text-fill: white;"/>
+                    </VBox>
+                </FlowPane>
+            </center>
+
+            <right>
+                <VBox alignment="CENTER"
+                      spacing="20">
+                    <padding>
+                        <Insets top="20" right="20"/>
+                    </padding>
+
+                    <Button text="➕ Add Product"
+                            prefWidth="220"
+                            prefHeight="55"
+                            onAction="#addProduct"/>
+
+                    <Button text="✏️ Update Product"
+                            prefWidth="220"
+                            prefHeight="55"
+                            onAction="#updateProduct"/>
+
+                    <Button text="❌ Delete Product"
+                            prefWidth="220"
+                            prefHeight="55"
+                            onAction="#deleteProduct"/>
+
+                    <Button text="📦 View Orders"
+                            prefWidth="220"
+                            prefHeight="55"
+                            onAction="#viewOrders"/>
+
+                    <Button text="🔍 Order Details"
+                            prefWidth="220"
+                            prefHeight="55"
+                            onAction="#viewOrderDetails"/>
+
+                    <Button text="📊 Sales By Type"
+                            prefWidth="220"
+                            prefHeight="55"
+                            onAction="#viewSalesByCategory"/>
+
+                    <Button text="📅 Daily Sales"
+                            prefWidth="220"
+                            prefHeight="55"
+                            onAction="#viewDailySales"/>
+
+                    <Button text="🗓 Monthly Sales"
+                            prefWidth="220"
+                            prefHeight="55"
+                            onAction="#viewMonthlySales"/>
+
+                    <Button text="🚪 Logout"
+                            prefWidth="220"
+                            prefHeight="55"
+                            onAction="#logout"/>
+                </VBox>
+            </right>
+
+        </BorderPane>
+    </content>
+</ScrollPane>

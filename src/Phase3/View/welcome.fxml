@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox alignment="CENTER"
+      spacing="20"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Phase3.Controller.WelcomeController"
+      stylesheets="@../CSS/style.css">
+
+    <padding>
+        <Insets top="40" right="40" bottom="40" left="40"/>
+    </padding>
+    <Label text="💎"
+       style="-fx-font-size: 50px;"/>
+
+    <Label text="DUBAI JEWELRY"
+           styleClass="title"/>
+
+    <Label text="Luxury Gold Experience ✨"
+           styleClass="subtitle"/>
+
+    <Button text="Customer"
+            onAction="#openCustomerLogin"
+            prefWidth="220"/>
+
+    <Button text="Admin"
+            onAction="#openAdminLogin"
+            prefWidth="220"/>
+
+</VBox>

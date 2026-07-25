@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox alignment="CENTER"
+      spacing="15"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Phase3.Controller.CustomerLoginController"
+      stylesheets="@../CSS/style.css"> <padding>
+        <Insets top="40" right="40" bottom="40" left="40"/>
+    </padding>
+
+    <Label text="Customer Login"
+           styleClass="title"/>
+
+    <TextField fx:id="usernameField"
+               promptText="Username"
+               prefWidth="250"/>
+
+    <PasswordField fx:id="passwordField"
+                   promptText="Password"
+                   prefWidth="250"/>
+
+    <Button text="Login"
+            prefWidth="250"
+            onAction="#login"/>
+
+    <Hyperlink text="Don't have an account? Create Account"
+               onAction="#openRegister"/>
+
+</VBox>

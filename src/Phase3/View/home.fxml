@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox alignment="CENTER"
+      spacing="35"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Phase3.Controller.HomeController"
+      stylesheets="@../CSS/style.css">
+
+    <padding>
+        <Insets top="50" right="40" bottom="50" left="40"/>
+    </padding>
+
+    <Label text="DUBAI JEWELRY"
+           styleClass="title"/>
+
+    <Label text="Choose Gold Karat"
+           styleClass="subtitle"/>
+
+    <Button text="💎 21K"
+            prefWidth="300"
+            prefHeight="60"
+            onAction="#open21K"/>
+
+    <Button text="💎 18K"
+            prefWidth="300"
+            prefHeight="60"
+            onAction="#open18K"/>
+
+    <Button text="💎 14K"
+            prefWidth="300"
+            prefHeight="60"
+            onAction="#open14K"/>
+
+</VBox>

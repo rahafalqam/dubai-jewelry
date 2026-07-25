@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox alignment="CENTER"
+      spacing="35"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Phase3.Controller.CategoriesController"
+      stylesheets="@../CSS/style.css">
+
+    <padding>
+        <Insets top="50" right="40" bottom="50" left="40"/>
+    </padding>
+
+    <Label text="Choose Jewelry Category"
+           styleClass="title"/>
+
+    <Button text="💍 Rings"
+            prefWidth="300"
+            prefHeight="60"
+            onAction="#openRings"/>
+
+    <Button text="✨ Bracelet"
+            prefWidth="300"
+            prefHeight="60"
+            onAction="#openBracelets"/>
+
+    <Button text="📿Neclace"
+            prefWidth="300"
+            prefHeight="60"
+            onAction="#openNecklaces"/>
+           <Button text="← Back"
+        prefWidth="180"
+        prefHeight="50"
+        onAction="#goBack"/>
+
+</VBox>
